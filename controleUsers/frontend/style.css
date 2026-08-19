@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+.container-box-forms{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(228, 233, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-forms{
+    width: 100%;
+}
+.container-forms h1{
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: rgb(34, 43, 165);
+    letter-spacing: 1px;
+}
+.container-forms .box-form{
+    margin: 0 50px;
+}
+.container-forms #form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.container-forms #form div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 60%;
+}
+.container-forms #form label{
+    text-transform: uppercase;
+    color: rgb(180, 180, 180);
+    font-weight: 600;
+    font-size: 11pt;
+}
+.container-forms #form input{
+    border: 2px solid rgb(180, 180, 180);
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.container-forms #form input:focus{
+    border-color: rgb(34, 43, 165);
+    box-shadow: 0px 1px 3px rgba(34, 43, 165, 0.636);
+}
+.container-forms #form .box-btn{
+    margin-top: 10px;
+    align-items: center;
+}
+.container-forms #form .box-btn button{
+    width: 40%;
+    padding: 6px;
+    border: 3px solid rgb(34, 43, 165);
+    border-radius: 8px;
+    background-color: rgb(34, 43, 165);
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    font-size: 10pt;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.container-forms #form .box-btn button:hover{
+    color: rgb(34, 43, 165);
+    background-color: transparent;
+}
+.box-infos{
+    height: 100%;
+    width: 60%;
+    background-color: rgb(34, 43, 165);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    overflow-y: scroll;
+}
+.box-table{
+    margin: 40px 0;
+    width: 90%;
+}
+table{
+    margin: 40px 0;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+table th{
+    padding: 10px 5px;
+    color: rgb(228, 233, 255);
+    background-color: rgb(8, 13, 87);
+}
+table tr{
+    background-color: rgb(228, 233, 255);
+}
+.alter-color{
+    background-color: rgba(228, 233, 255, 0.94);
+}
+table td{
+    padding: 8px;
+}
+table td button{
+    width: 100%;
+    cursor: pointer;
+    padding: 4px 0px;
+    border-radius: 4px;
+    border: 2px solid rgb(34, 43, 165);
+    color: rgb(34, 43, 165);
+    transition: 0.3s;
+}
+table td button:hover{
+    color: white;
+    background-color: rgb(34, 43, 165);
+}
+
+
+
+
+.box-popup{
+    backdrop-filter: blur(5px);
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+.popup{
+    width: 20%;
+    background-color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.501);
+    border-radius: 15px;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.popup h2{
+    color: rgb(34, 43, 165);
+}
+.popup label{
+    text-transform: uppercase;
+    color: rgb(180, 180, 180);
+    font-weight: 600;
+    font-size: 11pt;
+}
+.popup input{
+    border: 2px solid rgb(180, 180, 180);
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.popup input:focus{
+    border-color: rgb(34, 43, 165);
+    box-shadow: 0px 1px 3px rgba(34, 43, 165, 0.636);
+}
+.popup button{
+    border: 3px solid rgb(34, 43, 165);
+    border-radius: 6px;
+    background-color: rgb(34, 43, 165);
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    font-size: 10pt;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.popup button:hover{
+    color: rgb(34, 43, 165);
+    background-color: transparent;
+}
+.popup #form-senha{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+.popup #form-senha input{
+    width: 100%;
+}
+.popup #form-change{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2px;
+}
+.popup #form-change input{
+    margin-bottom: 10px;
+}
+.popup button{
+    padding: 2px 8px;
+}
+.popup #form-change button{
+    width: 50%;
+    margin-top: 10px;
+}
+.popup .close-popup{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    cursor: pointer;
+}
+.activate{
+    display: flex;
+}
+
+
+@media screen and (max-width: 1440px){
+    body{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }   
+    .container-box-forms{
+        width: auto;
+        height: auto;
+    }
+    .container-forms{
+        padding: 100px 0;
+    }
+    .container-forms .box-form{
+        margin: 0 50px;
+    }
+    .container-forms #form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .container-forms #form div{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 40%;
+    }
+    .box-infos{
+        height: auto;
+        width: auto;
+        background-color: rgb(34, 43, 165);
+        overflow: unset;
+    }
+    .box-table{
+        overflow-x: scroll;
+    }
+    .popup{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .popup{ 
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container-forms #form div{
+        width: 100%;
+    }
+    .box-infos{
+        padding: 0 10px;
+        justify-content: left;
+    }
+    .box-table{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .popup{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 425px){
+    .popup{
+        width: 100%;
+        margin: 0 20px;
+    }
+}

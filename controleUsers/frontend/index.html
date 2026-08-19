@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Controle de Usuarios</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-box-forms">
+            <div class="container-forms">
+                <h1>Controle de Usuarios</h1>
+                <div class="box-form">
+                    <form id="form">
+                        <div>
+                            <label for="">Nome</label>
+                            <input type="text" id="first-name" required>
+                        </div>
+                        <div>
+                            <label for="">Sobrenome</label>
+                            <input type="text" id="last-name" required>
+                        </div>
+                        <div>
+                            <label for="">Idade</label>
+                            <input type="number" id="age" required>
+                        </div>
+                        <div>
+                            <label for="">E-mail</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div>
+                            <label for="">Senha</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div>
+                            <label for="">Confirmar senha</label>
+                            <input type="password" id="confirm-password" required>
+                        </div>
+                        <div class="box-btn">
+                            <button type="submit">salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="box-infos">
+            <div class="box-table">
+                <table id="table"></table>
+            </div>
+        </div>
+
+        <div class="box-popup">
+            <div class="popup">
+                <h2>Insira a senha do User</h2>
+                <form id="form-senha">  
+                    <input type="password" id="verify-password">
+                    <button type="submit">enviar</button>
+                </form>
+                <div class="close-popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-popup">
+            <div class="popup">
+                <h2>Realize suas alterações</h2>
+                <form id="form-change">
+                    <label for="">Nome</label>
+                    <input type="text" id="change-name">
+                    <label for="">Sobrenome</label>
+                    <input type="text" id="change-last-name">
+                    <label for="">Idade</label>
+                    <input type="number" id="change-age">
+                    <label for="">E-mail</label>
+                    <input type="email" id="change-email">
+                    <button type="submit">Salvar</button>
+                </form>
+                <div class="close-popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
